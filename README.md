@@ -2,7 +2,7 @@
 
 🚀 A clean, minimal API to download and convert Social videos with yt-dlp + ffmpeg + FastAPI.
 
-🌟 Features
+🌟 <b>Features</b>
 
     • Spawns yt-dlp downloads as jobs
 
@@ -14,7 +14,7 @@
 
     • Ready‑to‑use HTTP endpoints for status + file serving
 
-⚙️ How It Works
+⚙️ <b>How it Works</b>
 
     ‣ Send a URL → the service starts a yt-dlp download in the background.
 
@@ -24,7 +24,7 @@
 
     ‣ Once done, you get a downloadable video file from /files/{filename}.
 
-✅ Requirements
+✅ <b>Requirements</b>
 
     ‣ Docker + Docker Compose
 
@@ -32,7 +32,7 @@
 
     ‣ A cookies file (e.g., instagram.txt) mounted outside the repo when needed
 
-🚀 Quick Start
+🚀 <b>Quick Start</b>
 
     Create .env (keep this file out of the repo):
 
@@ -57,7 +57,7 @@
     bash
     docker compose up -d
 
-🌐 Endpoints
+🌐 <b>Endpoints</b>
 
     GET /health
     Health check + current job count and queue size.
@@ -74,7 +74,7 @@
     GET /files/{filename}
     Download the finished video.
 
-🔐 Security
+🔐 <b>Security</b>
 
     API_KEY is read from environment, never hardcoded.
     
@@ -86,7 +86,7 @@
     
     Never commit your .env or instagram.txt into the repo.
 
-📦 Repo Layout
+📦 <b>Repo Layout</b>
 
     app/main.py – FastAPI + jobs + yt-dlp/ffmpeg logic
     
@@ -106,12 +106,12 @@
   <img src="images/IMG_3859.jpg" alt="Texto 3858" width="220">
 </p>
 
-🤝 Contributing
+🤝 <b>Contributing</b>
 
     Open issues for bugs, ideas, or new “fast‑origin” sites.
     PRs are welcome, but keep secrets outside the repo.
 
-📄 License
+📄 <b>License</b>
 
     MIT – use it, hack it, break it, fix it, just don’t sue me. 😄
 
